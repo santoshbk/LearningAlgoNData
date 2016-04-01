@@ -6,15 +6,14 @@ public class Staircase {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		// int n = in.nextInt();
-		// one(n);
+		int n = in.nextInt();
+		//one(n);
+		stair(n);
 		// three();
-		String s;
-		int a;
-		s = "Foolish boy.";
-		a = s.indexOf("Fool");
-		System.out.println(a);
-	}
+		/*
+		 * String s; int a; s = "Foolish boy."; a = s.indexOf("Fool");
+		 * System.out.println(a);
+		 */}
 
 	void t() {
 		String s;
@@ -22,6 +21,21 @@ public class Staircase {
 		s = "Foolish boy.";
 		a = s.indexOf("Fool");
 		System.out.println(a);
+	}
+
+	static void stair(int n) {
+		for (int j = 1, i=n-1; i >= 0; i--,j++) {
+			String repeated = "";
+			if(i==0){
+				repeated = new String(new char[n]).replace("\0", "#");
+				System.out.print(repeated);
+				continue;
+			}
+			System.out.print(String.format("%" + i + "s", ""));
+			repeated = new String(new char[j]).replace("\0", "#");
+			System.out.print(repeated);
+			System.out.println();
+		}
 	}
 
 	static void one(int n) {
