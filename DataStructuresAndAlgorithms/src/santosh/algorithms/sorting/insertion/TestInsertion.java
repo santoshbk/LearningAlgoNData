@@ -1,5 +1,7 @@
 package santosh.algorithms.sorting.insertion;
 
+import java.util.Collection;
+
 public class TestInsertion {
 
 	public static void main(String[] args) throws CloneNotSupportedException {
@@ -17,7 +19,6 @@ public class TestInsertion {
 		System.out.println("Before " + t);
 		checkNonPrimitive(t);
 		System.out.println("After " + t);
-
 		
 		MySingleton c = MySingleton.getInstance(10);
 		System.out.println("C" + c.getI());

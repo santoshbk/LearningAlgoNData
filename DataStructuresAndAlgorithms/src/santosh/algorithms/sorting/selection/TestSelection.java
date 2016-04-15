@@ -17,19 +17,15 @@ public class TestSelection {
 
 	static void selectionSortingArray(int[] arr) {
 		for (int i = 0; i < arr.length - 1; i++) {
-			int small = arr[i + 1];
-			int pointer = i + 1;
-			for (int j = i + 2; j < arr.length - 2; j++) {
-				if (small > arr[j]) {
-					small = arr[j];
+			int pointer = i;
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[j] < arr[pointer]) {
 					pointer = j;
 				}
 			}
-			if (arr[i] > small) {
-				int temp = arr[i];
-				arr[i] = small;
-				small = temp;
-			}
+			int small = arr[pointer]; 
+            arr[pointer] = arr[i];
+            arr[i] = small;
 		}
 	}
 
