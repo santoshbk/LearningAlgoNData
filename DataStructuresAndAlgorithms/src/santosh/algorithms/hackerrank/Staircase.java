@@ -1,4 +1,4 @@
-package santosh.algorithms.staircase;
+package santosh.algorithms.hackerrank;
 
 import java.util.Scanner;
 

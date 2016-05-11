@@ -1,4 +1,4 @@
-package santosh.algorithms.timeconversation;
+package santosh.algorithms.hackerrank;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

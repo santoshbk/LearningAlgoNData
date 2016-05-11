@@ -1,4 +1,4 @@
-package santosh.Challenge.PracticeCode;
+package santosh.algorithms.hackerrank;
 
 import java.util.Scanner;
 
