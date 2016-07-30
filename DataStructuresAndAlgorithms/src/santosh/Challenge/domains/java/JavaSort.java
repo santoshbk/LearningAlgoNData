@@ -8,13 +8,13 @@ import java.util.Scanner;
 
 class Student {
     private final int id;
-    private final String fname;
+    private final String firstName;
     private final double cgpa;
 
     public Student(final int id, final String firstName, final double cgpa) {
 	super();
 	this.id = id;
-	this.fname = firstName;
+	this.firstName = firstName;
 	this.cgpa = cgpa;
     }
 
@@ -23,7 +23,7 @@ class Student {
     }
 
     public String getFname() {
-	return this.fname;
+	return this.firstName;
     }
 
     public double getCgpa() {
