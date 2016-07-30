@@ -11,10 +11,10 @@ class Student {
     private final String fname;
     private final double cgpa;
 
-    public Student(final int id, final String fname, final double cgpa) {
+    public Student(final int id, final String firstName, final double cgpa) {
 	super();
 	this.id = id;
-	this.fname = fname;
+	this.fname = firstName;
 	this.cgpa = cgpa;
     }
 
