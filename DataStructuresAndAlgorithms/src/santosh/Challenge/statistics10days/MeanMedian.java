@@ -16,12 +16,6 @@ public class MeanMedian {
 	}
 	in.close();
 	Arrays.sort(array);
-	double median = 0;
-	if ((N % 2) == 0) {
-	    median = (array[N / 2] + array[(N / 2) - 1]) / 2.0;
-	} else {
-	    median = array[(N / 2) + 1];
-	}
 	long sum = 0;
 	Map<Integer, Integer> map = new HashMap<>();
 	for (int i : array) {
@@ -33,6 +27,14 @@ public class MeanMedian {
 	    }
 	}
 	double mean = (sum * 1.0) / N;
+	System.out.printf("%.1f%n", mean);
+	double median = 0;
+	if ((N % 2) == 0) {
+	    median = (array[N / 2] + array[(N / 2) - 1]) / 2.0;
+	} else {
+	    median = array[(N / 2) + 1];
+	}
+	System.out.printf("%.1f%n", median);
 	int modeValue = 0;
 	int mode = 0;
 	for (int i : map.keySet()) {
@@ -46,8 +48,6 @@ public class MeanMedian {
 		mode = i;
 	    }
 	}
-	System.out.println(mean);
-	System.out.println(median);
 	System.out.println(mode);
     }
 
