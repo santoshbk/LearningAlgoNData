@@ -7,6 +7,7 @@ public class CamelCase {
     public static void main(final String[] args) {
 	Scanner in = new Scanner(System.in);
 	String s = in.nextLine();
+	in.close();
 	int count = 1;
 	for (Character c : s.toCharArray()) {
 	    int cc = c;
