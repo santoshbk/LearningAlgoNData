@@ -30,7 +30,6 @@ public class BiggerIsGreater {
 	    for (int j = 0; j < (len - 1);) {
 		char b = c[j];
 	    }
-
 	}
 	return null;
     }
