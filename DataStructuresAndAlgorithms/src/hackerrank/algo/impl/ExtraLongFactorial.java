@@ -1,5 +1,8 @@
 package hackerrank.algo.impl;
 
+import static java.math.BigInteger.ONE;
+import static java.math.BigInteger.ZERO;
+
 import java.math.BigInteger;
 import java.util.Scanner;
 
@@ -14,9 +17,9 @@ public class ExtraLongFactorial {
 
     static BigInteger getFactorial(BigInteger K) {
 	if (K.intValue() <= 0) {
-	    return BigInteger.ZERO;
+	    return ZERO;
 	}
-	BigInteger one = BigInteger.ONE;
+	BigInteger one = ONE;
 	BigInteger res = K;
 	if (K.intValue() == 1) {
 	    return one;
