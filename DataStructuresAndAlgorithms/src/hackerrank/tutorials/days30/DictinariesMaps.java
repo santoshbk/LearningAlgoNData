@@ -1,4 +1,4 @@
-package santosh.Challenge.days30;
+package hackerrank.tutorials.days30;
 
 import java.util.HashMap;
 import java.util.Map;
