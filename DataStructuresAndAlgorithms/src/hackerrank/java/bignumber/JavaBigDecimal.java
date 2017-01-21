@@ -1,4 +1,4 @@
-package santosh.Challenge.domains.java;
+package hackerrank.java.bignumber;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

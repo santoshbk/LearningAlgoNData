@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class LinkedListTest {
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner in = new Scanner(System.in);
 		Node head = null;
 		int T = in.nextInt();
@@ -19,7 +19,7 @@ public class LinkedListTest {
 		in.close();
 	}
 
-	public static Node insert(Node head, int data) {
+	public static Node insert(final Node head, final int data) {
 		if (head == null) {
 			return new Node(data);
 		}
@@ -31,7 +31,7 @@ public class LinkedListTest {
 		return head;
 	}
 
-	public static void display(Node head) {
+	public static void display(final Node head) {
 		Node start = head;
 		while (start != null) {
 			System.out.print(start.data + " ");
@@ -45,8 +45,11 @@ class Node {
 	int data;
 	Node next;
 
-	Node(int data) {
+	Node() {
+	}
+
+	Node(final int data) {
 		this.data = data;
-		next = null;
+		this.next = null;
 	}
 }

@@ -1,4 +1,4 @@
-package santosh.Challenge.domains.java;
+package hackerrank.java.ds;
 
 import java.util.Scanner;
 import java.util.Stack;

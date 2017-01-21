@@ -1,4 +1,4 @@
-package santosh.Challenge.domains.java;
+package hackerrank.java.intro;
 
 import java.lang.reflect.Method;
 import java.util.Scanner;

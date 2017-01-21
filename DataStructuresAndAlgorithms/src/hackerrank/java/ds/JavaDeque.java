@@ -1,4 +1,4 @@
-package santosh.Challenge.domains.java;
+package hackerrank.java.ds;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

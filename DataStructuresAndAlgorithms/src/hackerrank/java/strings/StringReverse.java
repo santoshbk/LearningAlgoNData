@@ -1,4 +1,4 @@
-package santosh.Challenge.domains.java;
+package hackerrank.java.strings;
 
 import java.util.Scanner;
 import java.util.Stack;
@@ -8,26 +8,26 @@ import java.util.Stack;
  */
 public class StringReverse {
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String A = sc.next();
-		//usingStack(A);
+		// usingStack(A);
 		looping(A);
 	}
 
-	static void usingStack(String s) {
-		
+	static void usingStack(final String s) {
+
 		Stack<Character> c = new Stack<>();
 	}
-	
-	static void looping(String s){
+
+	static void looping(final String s) {
 		char[] c = s.toCharArray();
 		int len = c.length;
-		for (int i = 0, j=len-1; i<=j; i++, j--) {
-			if(c[i]!=c[j]){
+		for (int i = 0, j = len - 1; i <= j; i++, j--) {
+			if (c[i] != c[j]) {
 				System.out.println("No");
 				return;
-			} 
+			}
 		}
 		System.out.println("Yes");
 

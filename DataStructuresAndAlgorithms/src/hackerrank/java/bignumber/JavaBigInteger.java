@@ -1,4 +1,4 @@
-package santosh.Challenge.domains.java;
+package hackerrank.java.bignumber;
 
 import java.math.BigInteger;
 import java.util.Scanner;
