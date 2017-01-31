@@ -1,4 +1,4 @@
-package hackerearth.practice.BasicProg;
+package hackerearth.practice.BasicProg.io;
 
 import java.util.ArrayList;
 import java.util.List;
