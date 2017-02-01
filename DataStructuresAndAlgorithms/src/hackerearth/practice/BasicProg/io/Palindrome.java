@@ -8,6 +8,7 @@ public class Palindrome {
 
 		Scanner in = new Scanner(System.in);
 		String s = in.nextLine();
+		in.close();
 		System.out.println(isPalindrome(s) ? "YES" : "NO");
 	}
 
