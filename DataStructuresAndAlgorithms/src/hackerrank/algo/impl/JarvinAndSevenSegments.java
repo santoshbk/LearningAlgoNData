@@ -31,6 +31,7 @@ public class JarvinAndSevenSegments {
     }
 
     private static int getVal(final int t) {
+	;
 	return map.get(t);
     }
 
