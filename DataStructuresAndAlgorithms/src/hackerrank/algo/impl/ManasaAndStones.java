@@ -2,7 +2,6 @@ package hackerrank.algo.impl;
 
 import java.util.ArrayDeque;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -15,7 +14,7 @@ public class ManasaAndStones {
 	static Set<Integer> s = new TreeSet<>();
 	static List<Integer> ll = new LinkedList<>();
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner in = new Scanner(System.in);
 		int t = in.nextInt();
 		while (t-- > 0) {
@@ -30,7 +29,7 @@ public class ManasaAndStones {
 		in.close();
 	}
 
-	private static void solQ(int n, int a, int b) {
+	private static void solQ(final int n, final int a, final int b) {
 		if (a == b) {
 			System.out.println(n - a);
 			return;
@@ -56,7 +55,7 @@ public class ManasaAndStones {
 		}
 	}
 
-	private static void solArr(int n, int a, int b) {
+	private static void solArr(final int n, final int a, final int b) {
 		if (a == b) {
 			System.out.println(n - a);
 			return;
@@ -78,12 +77,12 @@ public class ManasaAndStones {
 			set.addAll(ss);
 		}
 		for (Integer integer : set) {
-			System.out.print(integer+"\t");
+			System.out.print(integer + "\t");
 		}
 		System.out.println();
 	}
 
-	private static void solution(int n, int a, int b) {
+	private static void solution(final int n, final int a, final int b) {
 		if (a == b) {
 			System.out.println(n - a);
 			return;
@@ -104,7 +103,7 @@ public class ManasaAndStones {
 		System.out.println();
 	}
 
-	private static List<Integer> getD(List<Integer> list, int a, int b) {
+	private static List<Integer> getD(final List<Integer> list, final int a, final int b) {
 		for (Integer k : list) {
 			ll.add(a + k);
 			ll.add(b + k);

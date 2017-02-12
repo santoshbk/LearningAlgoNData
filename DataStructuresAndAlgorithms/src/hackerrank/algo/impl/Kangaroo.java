@@ -25,8 +25,8 @@ public class Kangaroo {
 				System.out.println("YES");
 				break;
 			}
-			k1 += v1;
-			k2 += v2;
+			k1+=v1;
+			k2+=v2;
 		}
 	}
 }
