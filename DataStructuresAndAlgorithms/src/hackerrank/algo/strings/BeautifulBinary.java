@@ -2,34 +2,35 @@ package hackerrank.algo.strings;
 
 import java.util.Scanner;
 
-public class MarsExploration {
+public class BeautifulBinary {
+
 	public static void main(String[] args) {
 		final Scanner in = new Scanner(System.in);
+		int t = in.nextInt();
+		in.nextLine();
 		final String s = in.nextLine();
 		in.close();
 		int k = 1;
 		int count = 0;
 		for (final char c : s.toCharArray()) {
-
-			if (k == 1) {
-				if (c != 'S') {
-					count++;
-				}
-			} else if (k == 2) {
-				if (c != 'O') {
+			if (c == '0') {
+				if (k == 1) {
+					k++;
+				} else if (k == 2) {
+					k = 1;
+				} else {
+					k = 1;
 					count++;
 				}
 			} else {
-				if (c != 'S') {
-					count++;
+				if (k == 2) {
+					k++;
+				} else {
+					k = 1;
 				}
-			}
-			if (k % 3 == 0) {
-				k = 1;
-			} else {
-				k++;
 			}
 		}
 		System.out.println(count);
 	}
+
 }
