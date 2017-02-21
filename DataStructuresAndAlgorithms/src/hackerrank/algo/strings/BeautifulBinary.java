@@ -12,12 +12,12 @@ public class BeautifulBinary {
 		in.close();
 		int k = 1;
 		int count = 0;
-		for (final char c : s.toCharArray()) {
+		for (int i = 0; i < t; i++) {
+			char c = s.charAt(i);
 			if (c == '0') {
 				if (k == 1) {
 					k++;
 				} else if (k == 2) {
-					k = 1;
 				} else {
 					k = 1;
 					count++;
