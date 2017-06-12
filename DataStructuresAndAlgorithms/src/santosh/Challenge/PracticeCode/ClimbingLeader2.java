@@ -1,4 +1,4 @@
-package com;
+package santosh.Challenge.PracticeCode;
 
 import java.util.ArrayList;
 import java.util.List;

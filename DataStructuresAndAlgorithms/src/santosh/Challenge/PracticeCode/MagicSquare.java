@@ -1,4 +1,4 @@
-package solutions;
+package santosh.Challenge.PracticeCode;
 
 import java.util.Scanner;
 

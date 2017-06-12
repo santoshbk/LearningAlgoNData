@@ -1,4 +1,4 @@
-package a;
+package santosh.Challenge.PracticeCode;
 
 import java.io.IOException;
 import java.util.Scanner;
