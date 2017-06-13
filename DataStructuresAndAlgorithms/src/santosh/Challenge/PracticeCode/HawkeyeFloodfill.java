@@ -5,6 +5,38 @@ import java.util.Scanner;
 public class HawkeyeFloodfill {
 
 	public static void main(final String[] args) {
+		firstSol();
+	}
+
+	private static void secondSol() {
+
+		Scanner s = new Scanner(System.in);
+		int N = s.nextInt();
+		int i = s.nextInt();
+		int j = s.nextInt();
+		int p = s.nextInt();
+		int[][] a = new int[N][N];
+		int ki = p;
+		// for (int k = 0; k < N; k++) {
+		// for (int k2 = 0; k2 < N; k2++) {
+		// a[k][k2] = -1;
+		// }
+		// }
+		a[i][j] = p;
+		int y = j;
+		int x = i;
+		for (int k = N / 2; k >= 0; k--) {
+			int r = 3;
+			for (int k2 = 0; k2 < 3; k2++) {
+				for (int l = 0; l < r / 2; l++) {
+
+				}
+			}
+		}
+
+	}
+
+	public static void firstSol() {
 		Scanner s = new Scanner(System.in);
 		int N = s.nextInt();
 		int i = s.nextInt();
@@ -17,6 +49,7 @@ public class HawkeyeFloodfill {
 			ki = dec(ki);
 			for (int m = j; m > 0; m--) {
 				a[k][m] = kj;
+				kj = dec(kj);
 			}
 		}
 		ki = p - 1;
@@ -25,6 +58,7 @@ public class HawkeyeFloodfill {
 			ki = dec(ki);
 			for (int m = j + 1; m < N; m++) {
 				a[k][m] = kj;
+				kj = dec(kj);
 			}
 		}
 		ki = p - 1;
@@ -33,6 +67,7 @@ public class HawkeyeFloodfill {
 			ki = dec(ki);
 			for (int m = j - 1; m > 0; m--) {
 				a[k][m] = kj;
+				kj = dec(kj);
 			}
 		}
 		ki = p - 1;
@@ -41,6 +76,7 @@ public class HawkeyeFloodfill {
 			ki = dec(ki);
 			for (int m = j + 1; m < N; m++) {
 				a[k][m] = kj;
+				kj = dec(kj);
 			}
 		}
 		print(a, N);
