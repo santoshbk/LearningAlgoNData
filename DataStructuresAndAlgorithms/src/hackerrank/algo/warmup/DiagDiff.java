@@ -13,7 +13,6 @@ public class DiagDiff {
 				a[i][j] = in.nextInt();
 			}
 		}
-
 		long sumDiagPrim = 0;
 		long sumDiagSec = 0;
 		for (int i = 0; i < n; i++) {
